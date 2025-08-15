@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Senai Clicker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <span id="clicker">
+            <div class="clicks">
+                <button><p id="sesidio" style="opacity: 70%;">SESIDIO</p></button>
+                <div style="font-size: 24px; margin: 1% 0 2% 0;">
+                    <p><b id="abas">N/A</b><br>Abas Pedagogicas</p>
+                    <p style="font-size: large; opacity: 70%;"><b id="abasps">N/A</b> por Segundo</p>
+                </div>
+                <button id="butclick" onclick="clickable()"><img src="images/senai.png"></button>
+            </div>
+        </span>
+        <span id="stuff">
+
+        </span>
+        <span id="shop">
+            <p style="font-size: 48px; text-shadow: 0 2px 5px #14395271;">Shop</p>
+                <div class="upgs" id="cont">
+                    <p>Upgrades</p>
+                    <button class="item" id="upgtemplate" onclick="buy('upgs', this)" style="display: none;">
+                        <img src="images/cursor.webp">
+                        <p>1 Aba</p>
+                    </button>
+                </div>
+                <div class="builds" id="cont">
+                    <p>Buildings</p>
+                    <button class="item" id="buildtemplate" onclick="buy('builds', this)" style="display: none;">
+                        <img>
+                        <div id="conttitle"><b>Nome</b></div>
+                        <p>1 Aba</p>
+                        <div id="owned">N/A</div>
+                    </button>
+                </div>
+                <p id="maineffectdesc"></p>
+            </div>
+        </span>
+        <script src="script.js"></script>
+    </body>
+</html>
