@@ -153,7 +153,7 @@ for(let i=0;i<items.length;i++) {
         if(items[i].parentElement.className=='upgs') {
             document.getElementById('maineffectdesc').innerText=upgs[items[i].id][6];
         } else if(items[i].parentElement.className=='builds') {
-            document.getElementById('maineffectdesc').innerText=builds[items[i].id][2]+" "+items[i].id+"s produzindo "+builds[items[i].id][1]+" abas por segundo";
+            document.getElementById('maineffectdesc').innerText=builds[items[i].id][2]+" "+items[i].id+"s produzindo "+Math.round(builds[items[i].id][1]*100)/100+" abas por segundo";
         };
     });
     items[i].addEventListener('mouseout', () => {
